@@ -1,6 +1,5 @@
 /**
  * 気象アラートエンティティ
- * ドメイン層のビジネスロジックを持つ
  */
 export class Alert {
   constructor(
