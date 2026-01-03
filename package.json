@@ -4,13 +4,12 @@
   "type": "module",
   "packageManager": "bun@1.3.5",
   "workspaces": [
-    "packages/*"
+    "mcps/*"
   ],
   "scripts": {
     "build": "turbo run build",
     "build:weather": "turbo run build --filter=@study-mcp/weather",
-    "start:weather": "bun run packages/weather/dist/packages/weather/src/index.js",
-    "cache:clear": "rm -rf .turbo node_modules/.cache packages/*/.turbo packages/*/dist"
+    "start:weather": "bun run mcps/weather/dist/mcps/weather/src/index.js"
   },
   "devDependencies": {
     "@types/bun": "latest",
